@@ -1,0 +1,43 @@
+.navigation-btn {
+    -fx-background-color: #5181b8;
+    -fx-text-alignment: center;
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-background-radius: 50%;
+    -fx-min-width: 35px;
+    -fx-min-height: 35px;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+}
+
+.grid-pane {
+    -fx-background-color: #f0f2f5;
+    -fx-hgap: 10;
+    -fx-vgap: 10;
+}
+
+.search-input {
+    -fx-padding: 5px;
+    -fx-font-size: 14px;
+}
+
+.search-btn {
+    -fx-background-color: #4bb34b;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+    -fx-min-width: 80
+}
+
+.history-btn {
+    -fx-min-width: 80
+}
+
+.status-bar {
+    -fx-text-alignment: right;
+    -fx-text-fill: gray;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-padding: 10;
+    -fx-min-height: 50;
+}

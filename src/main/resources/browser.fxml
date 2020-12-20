@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.web.WebView?>
+
+<?import javafx.scene.control.Label?>
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="ru.kpfu.itis.iskander.Browser"
+          prefHeight="800" prefWidth="1000"
+          stylesheets="style.css" styleClass="grid-pane">
+    <columnConstraints>
+        <ColumnConstraints minWidth="10"/>
+        <ColumnConstraints/>
+        <ColumnConstraints/>
+        <ColumnConstraints/>
+        <ColumnConstraints/>
+        <ColumnConstraints/>
+        <ColumnConstraints minWidth="10"/>
+    </columnConstraints>
+    <Button fx:id="backBtn" mnemonicParsing="false" text="&lt;" styleClass="navigation-btn" GridPane.columnIndex="1"
+            GridPane.rowIndex="1"/>
+    <Button fx:id="forwardBtn" mnemonicParsing="false" text="&gt;" styleClass="navigation-btn" GridPane.columnIndex="2"
+            GridPane.rowIndex="1"/>
+    <TextField fx:id="searchField" GridPane.columnIndex="3" prefWidth="100000000000" GridPane.rowIndex="1"
+               styleClass="search-input"/>
+    <Button mnemonicParsing="false" fx:id="searchBtn" text="Search" styleClass="search-btn" GridPane.columnIndex="4"
+            GridPane.rowIndex="1"/>
+    <Button fx:id="historyBtn" mnemonicParsing="false" text="History" GridPane.columnIndex="5"
+            GridPane.rowIndex="1" styleClass="history-btn"/>
+    <WebView fx:id="browser" prefWidth="100000000000" prefHeight="100000000000" GridPane.columnSpan="7"
+             GridPane.rowIndex="2"/>
+    <Label fx:id="statusLabel" GridPane.rowIndex="3" styleClass="status-bar" prefWidth="100000000000"
+           GridPane.columnSpan="7"/>
+</GridPane>
